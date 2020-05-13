@@ -1,0 +1,2 @@
+rootProject.name='DIP2020'
+include ':app'
