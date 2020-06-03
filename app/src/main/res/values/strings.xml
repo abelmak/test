@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">DIP2020</string>
+    <string-array name="school">
+        <item>EEE</item>
+        <item>IEM</item>
+    </string-array>
+    <string-array name="year">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
 </resources>
