@@ -1,19 +1,21 @@
 package com.ntu.dip2020;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class User {
 
-    private String matric;
+    private String email;
     private String school;
     private String admissionYear;
 
-    public User(String matric, String school, String admissionYear) {
-        this.matric = matric;
+    public User(String school, String admissionYear) {
         this.school = school;
         this.admissionYear = admissionYear;
     }
 
-    public String getMatric() {
-        return matric;
+    public String getEmail() {
+        return email;
     }
 
     public String getSchool() {
@@ -24,8 +26,8 @@ public class User {
         return admissionYear;
     }
 
-    public void setMatric(String matric) {
-        this.matric = matric;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setSchool(String school) {
@@ -34,5 +36,19 @@ public class User {
 
     public void setAdmissionYear(String admissionYear) {
         this.admissionYear = admissionYear;
+    }
+
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> m = new HashMap<>();
+        m.put("email", email);
+        m.put("school", school);
+        m.put("admissionYear", admissionYear);
+        return m;
+    }
+
+    public void setFromMap(Map m){
+        setEmail((String) m.get("matric"));
+        setSchool((String) m.get("school"));
+        setAdmissionYear((String) m.get("admissionYear"));
     }
 }
