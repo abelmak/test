@@ -48,7 +48,7 @@ public class CloudFirestore implements CloudStoreInterface{
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 if (task.isSuccessful()) {
                     DocumentSnapshot document = task.getResult();
-                    if (document.exists()) { result = true; } else { result = false; }
+                    result = document.exists();
                 } else { result = false; }
             }
         });

@@ -17,7 +17,7 @@ public class ProfileActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence> schoolAdapter, yearAdapter;
     Button confirm;
     CheckBox directYear2;
-    String school, year, email;
+    String school, year;
     Boolean isDirectYear2 = false;
     CloudStoreInterface cloudStore;
 
