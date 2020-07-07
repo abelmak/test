@@ -7,12 +7,6 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,26 +57,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/add_course"
-        android:layout_width="203dp"
-        android:layout_height="47dp"
-        android:paddingHorizontal="20dp"
-        android:text="Add a new course"
-        app:layout_constraintBottom_toTopOf="@+id/calculator"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/course_list" />
-
-
-    <Button
-        android:id="@+id/Calculate"
-        android:layout_width="203dp"
-        android:layout_height="45dp"
-        android:text="Calculate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/add_course"
-        app:layout_constraintTop_toBottomOf="@+id/course_list" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/course_list"
         android:layout_width="match_parent"
@@ -96,6 +70,7 @@
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="44dp">
 
             <TableLayout
@@ -229,36 +204,29 @@
                     app:layout_constraintStart_toEndOf="@+id/semGPA"
                     app:layout_constraintTop_toBottomOf="@+id/gradedAU_result" />
 
-                <TextView
-                    android:id="@+id/CGPA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="23dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="342dp"
-                    android:padding="5dp"
-                    android:text="CGPA"
-                    android:textColor="@color/cardview_light_background"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/semGPA" />
-
-                <TextView
-                    android:id="@+id/CGPA_result"
-                    android:layout_width="79dp"
-                    android:layout_height="27dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@color/cardview_light_background"
-                    android:padding="3dp"
-                    android:text="TextView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.921"
-                    app:layout_constraintStart_toEndOf="@+id/CGPA"
-                    app:layout_constraintTop_toBottomOf="@+id/semGPA_result" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="203dp"
+        android:layout_height="45dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_course"
+        app:layout_constraintTop_toBottomOf="@+id/course_list" />
+
+    <Button
+        android:id="@+id/add_course"
+        android:layout_width="203dp"
+        android:layout_height="47dp"
+        android:paddingHorizontal="20dp"
+        android:text="Add a new course"
+        app:layout_constraintBottom_toTopOf="@+id/calculator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_list" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

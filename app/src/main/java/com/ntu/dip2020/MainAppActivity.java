@@ -15,7 +15,6 @@ public class MainAppActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_app);
         Button gpa_feature = findViewById(R.id.gpa_calculator);
-        TextView email = findViewById(R.id.textView2);
         gpa_feature.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
