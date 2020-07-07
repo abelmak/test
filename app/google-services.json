@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "548512597767",
+    "firebase_url": "https://au-planner.firebaseio.com",
+    "project_id": "au-planner",
+    "storage_bucket": "au-planner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548512597767:android:b7a79a781953c5e77fa7a2",
+        "android_client_info": {
+          "package_name": "com.ntu.dip2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548512597767-2v4pe0urvmhkcvrm7uj3nib1en1raero.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ntu.dip2020",
+            "certificate_hash": "74e3353f020b6b4397a5843e539cd9659731fa49"
+          }
+        },
+        {
+          "client_id": "548512597767-dv3j3ltmgeo1iici63u6r0qec40ekdjs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRoLG0UEdtR-7Awc5TCpcFSuihRLVJkT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548512597767-dv3j3ltmgeo1iici63u6r0qec40ekdjs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
