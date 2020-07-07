@@ -47,7 +47,7 @@ public class User {
     }
 
     public void setFromMap(Map m){
-        setEmail((String) m.get("matric"));
+        setEmail((String) m.get("email"));
         setSchool((String) m.get("school"));
         setAdmissionYear((String) m.get("admissionYear"));
     }

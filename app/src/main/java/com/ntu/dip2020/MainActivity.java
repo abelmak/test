@@ -20,34 +20,19 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 123;
-    /*private GoogleSignInClient mGoogleSignInClient;
-    public Button SignIn;
     private CloudStoreInterface cloudStore;
     private FirebaseInterface firebase;
     private Intent intent;
-    private FirebaseUser user;
-    private FirebaseAuth mAuth;
-    private static final String TAG = "MyActivity";*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         createSignInIntent();
-        /*intent = getIntent();
-        mAuth = FirebaseAuth.getInstance();
-        SignIn = (Button)findViewById(R.id.btn_login);
-        SignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SignIn();
-            }
-        });*/
     }
 
 
     public void createSignInIntent() {
-        FirebaseAuth auth = FirebaseAuth.getInstance();
         List<AuthUI.IdpConfig> providers = Arrays.asList(
                 new AuthUI.IdpConfig.GoogleBuilder().build(),
                 new AuthUI.IdpConfig.EmailBuilder().build());
@@ -67,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
                 // Successfully signed in
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                //FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 Toast.makeText(this, "Signed in", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(),ProfileActivity.class));
             } else {
@@ -76,4 +61,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+   /* private void initFirebaseAndCLoud(){
+            firebase = new Firebase();
+            cloudStore = new CloudFireStore();
+    }*/
 }
